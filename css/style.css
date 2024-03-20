@@ -11912,6 +11912,7 @@ h1 {
 
 h2 {
   font-family: Montserrat SemiBold;
+  margin-bottom: 100px;
 }
 
 .slideInUp {
@@ -11944,6 +11945,12 @@ h2 {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
