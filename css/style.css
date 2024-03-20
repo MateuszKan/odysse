@@ -11856,7 +11856,7 @@ textarea.form-control-lg {
 video {
   position: absolute;
   top: 50%;
-  Left: 75%;
+  left: 75%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
