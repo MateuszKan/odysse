@@ -11856,7 +11856,7 @@ textarea.form-control-lg {
 video {
   position: absolute;
   top: 50%;
-  Left: 50%;
+  Left: 75%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -11881,7 +11881,7 @@ video {
   animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes slideInLeft {
@@ -11889,10 +11889,12 @@ video {
     -webkit-transform: translateX(-200%);
     transform: translateX(-200%);
     visibility: visible;
+    opacity: 0%;
   }
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 100%;
   }
 }
 @keyframes slideInLeft {
@@ -11922,6 +11924,7 @@ h2 {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  animation-delay: 2s;
 }
 
 @-webkit-keyframes slideInUp {
@@ -11929,21 +11932,25 @@ h2 {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     visibility: visible;
+    opacity: 0%;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity: 100%;
   }
 }
 @keyframes slideInUp {
   0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translateY(300%);
+    transform: translateY(300%);
     visibility: visible;
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity: 100;
   }
 }
 .btn {
