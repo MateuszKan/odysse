@@ -27,8 +27,8 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'phpemail3@gmail.com';
     $mail->Password = 'Windows1!';
-    $mail->Port = 587; // Może być inny, zależnie od konfiguracji serwera SMTP
-    $mail->SMTPSecure = 'tls'; // Szyfrowanie, np. ssl lub tls
+    $mail->Port = 465; // Może być inny, zależnie od konfiguracji serwera SMTP
+    $mail->SMTPSecure = 'ssl'; // Szyfrowanie, np. ssl lub tls
 
     // Ustawienia wiadomości
     $mail->setFrom($email, $name);
