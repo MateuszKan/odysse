@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Odysee - your journey, electric</title>
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js" rel="a"></script>
+    <link  href="css/fontawsome.css" rel="stylesheet">
   </head>
   <body>
     <!-- NAV BAR -->
@@ -78,7 +79,9 @@
             <tr>
               <th scope="row">Lorem Ipsum</th>
               <td><i class="fas fa-check text-success"></i></td>
-              <td><i class="fas fa-check text-success"></i></td>
+              <td><i class="fas fa-heart"></i>
+                <i class="fas fa-paper-plane"></i>
+                <i class="far fa-flag"></i></td>
             </tr>
             <tr>
               <th scope="row">Lorem Ipsum</th>
@@ -88,11 +91,11 @@
             <tr>
               <th scope="row">Lorem Ipsum</th>
               <td><i class="fas fa-check text-success"></i></td>
-              <td><i class="fas fa-check text-success"></i></td>
+              <td><<i class="fas fa-solid fa-tags"</i></td>
             </tr>
             <tr>
               <th scope="row">Lorem Ipsum</th>
-              <td><i class="fas fa-check text-success"></i></td>
+              <td><i class="fa-solid fa-check"></i></i></td>
               <td><i class="fas fa-times text-danger"></i></td>
             </tr>
           </tbody>
@@ -102,73 +105,38 @@
       <!-- End Comper-->
       <div class="container">
         <h1>PCO Driver Application Form</h1>
-        <form>
-          <div class="form-group">
-            <label for="inputName">Full Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputName"
-              placeholder="Enter your full name"
-            />
-          </div>
-          <div class="form-group">
-            <label for="inputEmail">Email Address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              placeholder="Enter your email address"
-            />
-          </div>
-          <div class="form-group">
-            <label for="inputPhone">Phone Number</label>
-            <input
-              type="tel"
-              class="form-control"
-              id="inputPhone"
-              placeholder="Enter your phone number"
-            />
-          </div>
-          <div class="form-group">
-            <label for="inputLicense">Driver's License Number</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputLicense"
-              placeholder="Enter your driver's license number"
-            />
-          </div>
-          <div class="form-group">
-            <label for="inputExperience">Driving Experience (years)</label>
-            <input
-              type="number"
-              class="form-control"
-              id="inputExperience"
-              placeholder="Enter years of driving experience"
-            />
-          </div>
-          <div class="form-group">
-            <label for="inputAddress">Residential Address</label>
-            <textarea
-              class="form-control"
-              id="inputAddress"
-              rows="3"
-              placeholder="Enter your residential address"
-            ></textarea>
-          </div>
-          <div class="form-group">
-            <label for="inputReferral">Were you referred by someone?</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputReferral"
-              placeholder="If yes, enter who referred you"
-            />
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+        <form action="./email.php" method="post">
+            <div class="form-group">
+                <label for="inputName">Full Name</label>
+                <input type="text" class="form-control" id="inputName" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email Address</label>
+                <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="inputPhone">Phone Number</label>
+                <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="inputLicense">Driver's License Number</label>
+                <input type="text" class="form-control" id="inputLicense" name="license" placeholder="Enter your driver's license number" required>
+            </div>
+            <div class="form-group">
+                <label for="inputExperience">Driving Experience (years)</label>
+                <input type="number" class="form-control" id="inputExperience" name="experience" placeholder="Enter years of driving experience" required>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Residential Address</label>
+                <textarea class="form-control" id="inputAddress" name="address" rows="3" placeholder="Enter your residential address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="inputReferral">Were you referred by someone?</label>
+                <input type="text" class="form-control" id="inputReferral" name="referral" placeholder="If yes, enter who referred you">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-      </div>
+    </div>
       <div class="container">
         <h1 class="text-center mb-5">Testimonials</h1>
 
