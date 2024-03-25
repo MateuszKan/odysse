@@ -26,7 +26,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'phpemail3@gmail.com';
-    $mail->Password = 'Windows1!';
+    $mail->Password = 'xtml oxbo ppup npsm';
     $mail->Port = 465; // Może być inny, zależnie od konfiguracji serwera SMTP
     $mail->SMTPSecure = 'ssl'; // Szyfrowanie, np. ssl lub tls
 
