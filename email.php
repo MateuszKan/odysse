@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require './vendor/autoload.php';
+require 'vendor/autoload.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -27,8 +27,8 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'phpemail3@gmail.com';
     $mail->Password = 'xtml oxbo ppup npsm';
-    $mail->Port = 465; // Może być inny, zależnie od konfiguracji serwera SMTP
-    $mail->SMTPSecure = 'ssl'; // Szyfrowanie, np. ssl lub tls
+    $mail->Port = 587; // Może być inny, zależnie od konfiguracji serwera SMTP
+    $mail->SMTPSecure = 'tsl'; // Szyfrowanie, np. ssl lub tls
 
     // Ustawienia wiadomości
     $mail->setFrom($email, $name);
