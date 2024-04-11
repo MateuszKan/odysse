@@ -6,6 +6,10 @@
     <title>Odysee - your journey, electric</title>
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
+    />
   </head>
   <body>
     <!-- NAV BAR -->
@@ -21,32 +25,43 @@
     <div id="navbar-container"></div>
     <!--end of Navigation bar-->
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center overflow-hidden">
-      <video autoplay muted id="myVideo">
-        <source
-          src="./video/motorway_-_18082 (Original).mp4"
-          type="video/mp4"
-        />
-      </video>
+    <section
+      id="hero"
+      class="d-flex align-content-center justify-content-between overflow-hidden"
+    >
       <div
-        class="container justify-content-center object-fit-fill text-primary"
+        class="z-1 container align-content-center justify-content-center object-fit-fill text-primary"
         data-aos="fade-up"
         data-aos-delay="500"
       >
-        <h1 class="slideInLeft text-center">Welcome to Odysee</h1>
-        <h3 class="slideInLeft text-center">
-          We are London's first fleet-as-a-service provider to offer turn-key EV
-          fleet solutions to private-hire operators
-        </h3>
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              class="hero_logo fade img-fluid"
+              src="./images/Original.png"
+              alt="hero_logo"
+            />
+          </div>
+
+          <h4
+            class="mt-5 mb-5 hero_text fade col-md-6 offset-md-3 text-gray-500 justify-content-center text-center"
+          >
+            We are London's first fleet-as-a-service provider to offer turn-key
+            EV fleet solutions to private-hire operators
+          </h4>
+        </div>
         <button
           type="button"
-          class="btn btn-secondary text-capitalize justify-content-center slideInUp text-center"
+          class="btn btn btn-secondary btn-lg text-capitalize justify-content-center slideInUp text-center"
         >
           get in touch
         </button>
       </div>
+      <video autoplay muted id="myVideo">
+        <source src="./video/AdobeStock_500342567_5.mp4" type="video/mp4" />
+      </video>
     </section>
-    <!-- End Hero -->
+    <script type="module" src="./cookieconsent-config.js"></script>
     <!-- Footer -->
     <script>
       $(function () {
@@ -54,10 +69,9 @@
         $("#footer-container").load("footer.html");
       });
     </script>
-
-    <!-- Your HTML content goes here -->
     <div id="footer-container"></div>
-    <!-- end footer -->
+    <!-- End Footer -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
