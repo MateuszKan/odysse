@@ -211,3 +211,101 @@ body {
     width: 60%;
     /* The width is the width of the web page */
 }
+
+.hero_text {
+    font-family: 'poppins';
+
+}
+
+.hero_button {
+    font-family: 'poppins';
+    font-weight: 600;
+    color: #443F3F;
+}
+
+.color-gray-col {
+    padding: auto;
+}
+
+.text-col-1 {
+    font-family: 'poppins';
+    font-weight: 200;
+    color: #443F3F;
+}
+
+.self-rent-text {
+    font-family: 'public sans';
+    font-weight: 300;
+}
+
+.drivingwithus-bg {
+    background-image: url(/images/AdobeStock_292386750.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+
+}
+
+.drivewithus_text {
+    font-family: "aileron", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #35C0EC;
+}
+
+.drivewithus-text-odysse {
+    color: #9AEBA6;
+}
+
+body {
+    padding-top: 74px;
+}
+
+.header-drivewithus {
+    position: relative;
+    color: white;
+
+}
+
+.line {
+    border: 2px solid #002F69;
+    opacity: 1;
+    position: relative;
+    top: 45px;
+    width: 100px;
+    display: flex;
+}
+
+.pco-text {
+    color: #002F69;
+    background-color: #EBE9E9;
+    font-family: 'public sans';
+    opacity: 0.8;
+}
+
+.custom-container-width {
+    max-width: 500px;
+    /* Dowolna szerokość */
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.tesla-car-img {
+    width: 500px;
+}
+
+.driveyoufuturebg {
+    background-color: #35C0EC;
+}
+
+.driveyour-text {
+    font-family: 'poppins';
+    font-weight: 400;
+    color: white;
+}
+
+.driveyou-text-p {
+    color: white;
+    font-family: 'public sans';
+}
