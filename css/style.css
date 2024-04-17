@@ -12141,4 +12141,13 @@ body {
   font-family: "public sans";
 }
 
+.logo-comp {
+  min-width: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .logo-comp .container {
+    max-width: 100px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

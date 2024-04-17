@@ -309,3 +309,13 @@ body {
     color: white;
     font-family: 'public sans';
 }
+
+.logo-comp {
+    min-width: 100px;
+
+    @media screen and (max-width: 1024px) {
+        .container {
+            max-width: 100px;
+        }
+    }
+}
