@@ -7,24 +7,6 @@
     height: 100%;
 }
 
-video {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translateX(-75%) translateY(-50%);
-    overflow: hidden;
-}
-
-#hero {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 110px);
-    background-size: contain;
-}
 
 .slideInLeft {
     -webkit-animation-name: slideInLeft;
@@ -111,10 +93,6 @@ video {
     margin: 0 auto;
 }
 
-body {
-    padding-top: 60px;
-    padding-bottom: 80px;
-}
 
 
 @keyframes fade {
@@ -210,7 +188,6 @@ body {
 
 body {
     padding-top: 74px;
-    padding-bottom: 120px;
 }
 
 .header-drivewithus {
@@ -267,4 +244,58 @@ body {
 
 .bgfaq {
     background-color: #35C0EC;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+
+    header video {
+        display: none;
+    }
 }
