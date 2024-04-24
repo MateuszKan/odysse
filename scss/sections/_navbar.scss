@@ -246,10 +246,10 @@ body {
     background-color: #35C0EC;
 }
 
-header {
+.hero_header {
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -298,4 +298,15 @@ header .overlay {
     header video {
         display: none;
     }
+}
+
+footer {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.aplication-text {
+    font-family: 'poppins';
+    font-weight: 400;
+    color: gray;
 }
