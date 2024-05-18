@@ -12120,9 +12120,6 @@ header .overlay {
 /* Media Query for devices withi coarse pointers and no hover functionality */
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
 @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
-  }
   header video {
     display: none;
   }
@@ -12130,6 +12127,12 @@ header .overlay {
 footer {
   margin-top: 0;
   padding-top: 0;
+}
+
+.aplication-text {
+  font-family: "poppins";
+  font-weight: 400;
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */
