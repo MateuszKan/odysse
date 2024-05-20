@@ -12139,6 +12139,7 @@ footer {
 
 p,
 h1,
+h3,
 a,
 label,
 button {
@@ -12151,6 +12152,17 @@ input {
 
 .accordion {
   font-family: "poppins";
+}
+
+.fa-whatsapp {
+  font-size: 10rem;
+  /* Adjust the size as needed */
+  color: #25D366;
+}
+
+.fa-envelope {
+  font-size: 10rem;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
