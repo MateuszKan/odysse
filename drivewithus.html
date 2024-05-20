@@ -262,5 +262,13 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener('resize', function() {
+        var bg = document.querySelector('.');
+        bg.style.width = window.innerWidth + 'px';
+        bg.style.height = window.innerHeight + 'px';
+      });
+      window.dispatchEvent(new Event('resize')); // Inicjuje dostosowanie na starcie
+    </script>
   </body>
 </html>
