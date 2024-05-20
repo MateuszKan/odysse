@@ -12140,7 +12140,8 @@ footer {
 p,
 h1,
 a,
-label {
+label,
+button {
   font-family: "poppins";
 }
 
