@@ -5,7 +5,6 @@ import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookiecon
  * https://cookieconsent.orestbida.com/reference/configuration-reference.html
  */
 CookieConsent.run({
-
     categories: {
         necessary: {
             enabled: true,  // this category is enabled by default
@@ -20,7 +19,7 @@ CookieConsent.run({
             en: {
                 consentModal: {
                     title: 'We use cookies',
-                    description: 'Cookie modal description',
+                    description: 'We use cookies to ensure you get the best experience on our website and to collect personal data for job applications. You can manage your preferences below.',
                     acceptAllBtn: 'Accept all',
                     acceptNecessaryBtn: 'Reject all',
                     showPreferencesBtn: 'Manage Individual preferences'
@@ -33,14 +32,12 @@ CookieConsent.run({
                     closeIconLabel: 'Close modal',
                     sections: [
                         {
-                            title: 'Somebody said ... cookies?',
-                            description: 'I want one!'
+                            title: 'Cookies Policy',
+                            description: 'We use cookies to enhance your browsing experience, to collect personal data for job applications, and for analytics purposes. You can choose to accept or reject certain types of cookies.'
                         },
                         {
-                            title: 'Strictly Necessary cookies',
+                            title: 'Strictly Necessary Cookies',
                             description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
-
-                            //this field will generate a toggle linked to the 'necessary' category
                             linkedCategory: 'necessary'
                         },
                         {
@@ -49,8 +46,8 @@ CookieConsent.run({
                             linkedCategory: 'analytics'
                         },
                         {
-                            title: 'More information',
-                            description: 'For any queries in relation to my policy on cookies and your choices, please <a href="#contact-page">contact us</a>'
+                            title: 'More Information',
+                            description: 'For any queries regarding our cookie policy and your preferences, please <a href="#contact-page">contact us</a>.'
                         }
                     ]
                 }
