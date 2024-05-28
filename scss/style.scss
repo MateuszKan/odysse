@@ -8,13 +8,13 @@
 
 // Components
 @use './components/carousel';
-@use './components/column';
+@use './components/icons';
 
 // Layout
-@use './layout/header';
+@use './layout/hero';
 @use './layout/footer';
 @use './layout/navbar';
-@use './layout/drivewithus';
+@use './layout/_img_bg';
 
 // Utilities
 @use './utilities/utilities';
