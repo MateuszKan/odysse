@@ -14,14 +14,15 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'phpemail3@gmail.com';
-    $mail->Password = 'xtml oxbo ppup npsm';
+    $mail->Username = 'botodysee@gmail.com';
+    $mail->Password = 'naku quiz njqe onvl
+    ';
     $mail->Port = 587; // Może być inny, zależnie od konfiguracji serwera SMTP
     $mail->SMTPSecure = 'tls'; // Szyfrowanie, np. ssl lub tls
 
     // Odbiorca
     $mail->setFrom($_POST['email'], $_POST['name']);
-    $mail->addAddress('mateuszkantarewicz@gmail.com'); // Adres odbiorcy
+    $mail->addAddress('info@odysse.co.uk'); // Adres odbiorcy
 
     // Content
     $mail->isHTML(false);
