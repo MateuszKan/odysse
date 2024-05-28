@@ -23883,13 +23883,6 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.navbar-toggler-icon {
-  border: none;
-  /* Remove border */
-  outline: none;
-  /* Remove outline */
-}
-
 .bg-image {
   background-image: url(../images/driver-2.jpg);
   background-repeat: no-repeat;
