@@ -1,32 +1,8 @@
-// Define your custom colors
-$primary-color: #35C0EC;
-$secondary-color: #9AEBA6;
-$dark-color: #002F69;
-$gray-color: #f0f0f0;
-$light-gray-color: #EBE9E9;
-$black-color: black;
-$white-color: white;
+@import"./base/typography";
 
-// Import Bootstrap functions first (so that we can use them)
-@import "../node_modules/bootstrap/scss/functions";
 
-// Override Bootstrap variables
-$body-bg: $white-color;
-$body-color: $black-color;
-$btn-primary-bg: $primary-color;
-$btn-primary-border: $primary-color;
-$btn-secondary-bg: $secondary-color;
-$btn-secondary-border: $secondary-color;
-$input-border-color: $light-gray-color;
+$primary: #35C0EC;
+$secondary: #9AEBA6;
+$info: #2F90B0;
 
-// Override additional Bootstrap styles as needed
-$accordion-button-active-bg: $primary-color;
-$accordion-button-color: $white-color;
-$accordion-button-active-color: $white-color;
-$accordion-button-icon-active-color: $white-color;
-$accordion-button-active-border-color: $primary-color;
-
-// Import the rest of Bootstrap
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

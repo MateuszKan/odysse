@@ -1,4 +1,20 @@
-@use '../scss/custom';
-@use '../scss/sections/navbar';
-@use '../scss/sections/varables.scss';
-@use './components/typography.scss'
+// Custom & Bootstrap
+@use 'custom.scss';
+
+// Base
+@use './base/variables';
+@use './base/typography';
+@use './base/animation';
+// Components
+@use './components/buttons';
+@use './components/carousel';
+@use './components/column';
+
+// Layout
+@use './layout/header';
+@use './layout/footer';
+@use './layout/navbar';
+@use './layout/drivewithus';
+
+// Utilities
+@use './utilities/utilities';

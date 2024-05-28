@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://use.typekit.net/sdz2hxt.css");
+@import "./variables.scss";
+
+
+body {
+    font-family: $font-family-poppins !important;
+}
+
+
+input,
+.self-rent-text,
+.driveyou-text-p,
+.public-sans-text {
+    font-family: $font-family-public-sans !important;
+}
+
+.text-aileron {
+    font-family: $font-family-aileron;
+}
+
+.hero_button,
+.text-col-1,
+.aplication-text,
+.driveyour-text {
+    font-weight: 400;
+}
+
+.hero_button {
+    font-weight: 600;
+}
+
+.text-col-1 {
+    font-weight: 200;
+}
+
+.self-rent-text {
+    font-weight: 300;
+}

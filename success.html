@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Odysee - your journey, electric</title>
+    <link rel="icon" href="./images/icon.png" type="image/x-icon" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+      .container {
+        text-align: center;
+      }
+      .checkmark {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        background-color: #4caf50;
+      }
+      .checkmark::before {
+        content: "";
+        width: 20px;
+        height: 45px;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 35px;
+        top: 15px;
+      }
+      .message {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="checkmark"></div>
+      <div class="message">Application submitted successfully</div>
+    </div>
+  </body>
+</html>
