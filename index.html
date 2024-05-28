@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Odysee - your journey, electric</title>
+    <!-- Link to your custom CSS file -->
     <link href="css/style.css" rel="stylesheet" />
+    <!-- Link to your favicon -->
     <link rel="icon" href="./images/icon.png" type="image/x-icon" />
+    <!-- Link to Cookie Consent CSS file -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
@@ -13,8 +16,8 @@
   </head>
   <body>
     <header class="hero_header">
-      <!-- NAV BAR -->
-      <!--Navigation bar-->
+      <!-- NAVIGATION BAR -->
+      <!-- jQuery script to load the navigation bar -->
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
       <script>
         $(function () {
@@ -22,16 +25,17 @@
           $("#navbar-container").load("navbar.html");
         });
       </script>
-      <!-- Your HTML content goes here -->
+      <!-- Container for the navigation bar -->
       <div id="navbar-container"></div>
-      <!--end of Navigation bar-->
+      <!-- VIDEO BACKGROUND -->
       <video playsinline autoplay muted loop>
         <source src="./video/AdobeStock_500342567_5.mp4" type="video/mp4" />
       </video>
-      <!-- The header content -->
+      <!-- HEADER CONTENT -->
       <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
+            <!-- Hero logo -->
             <div class="text-center">
               <img
                 class="hero_logo fade img-fluid"
@@ -39,17 +43,19 @@
                 alt="hero_logo"
               />
             </div>
-
+            <!-- Hero title -->
             <h2
               class="hero_text mt-5 hero_text fade col-md-6 offset-md-3 text-gray-500 justify-content-center text-center"
             >
               Catalysing London's Future
             </h2>
+            <!-- Hero subtitle -->
             <p
               class="hero_text mb-5 hero_text fade col-md-6 offset-md-3 text-gray-500 justify-content-center text-center"
             >
               Premier Electric Fleet Solutions
             </p>
+            <!-- Button to get in touch -->
             <button
               type="button"
               class="btn btn-secondary fw-medium text-black-50 rounded-0 btn-lg text-capitalize justify-content-center slideInUp text-center"
@@ -61,28 +67,32 @@
         </div>
       </div>
     </header>
-    <!-- Footer -->
+    <!-- FOOTER -->
     <script>
       $(function () {
-        // Load and include the navbar using jQuery
+        // Load and include the footer using jQuery
         $("#footer-container").load("footer.html");
       });
     </script>
-    <!-- Your HTML content goes here -->
+    <!-- Container for the footer -->
     <footer class="bg-dark py-4 py-lg-3">
       <div id="footer-container"></div>
     </footer>
-    <!-- end footer -->
+    <!-- END FOOTER -->
+    <!-- JavaScript dependencies -->
+    <!-- Popper.js for Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
+    <!-- Bootstrap JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <!-- Cookie Consent configuration -->
     <script type="module" src="cookieconsent-config.js"></script>
   </body>
 </html>

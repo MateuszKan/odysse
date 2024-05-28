@@ -11998,14 +11998,6 @@ input,
   animation-delay: 4s;
 }
 
-button {
-  border-radius: 0;
-}
-
-input {
-  border-radius: 0;
-}
-
 .carousel-inner {
   width: 100%;
   min-height: 400px !important;
