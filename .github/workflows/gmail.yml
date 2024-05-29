@@ -1,0 +1,24 @@
+name: CI
+
+on: [push]
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up environment variables
+      run: echo "GMAIL_PASSWORD=${{ secrets.GMAIL_PASSWORD }}" >> $GITHUB_ENV
+
+    - name: Install PHP and dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install php php-cli php-mbstring
+        composer install
+
+    - name: Run PHP script
+      run: php email.php
+      env:
+        GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
