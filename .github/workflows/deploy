@@ -1,0 +1,13 @@
+// .github/workflows/deploy.yml
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Deploy
+      env:
+        GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+      run: |
+        echo "Deploying using Gmail password"
+        # tutaj dodaj kod do użycia hasła
