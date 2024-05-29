@@ -19,6 +19,6 @@ jobs:
         composer install
 
     - name: Run PHP script
-      run: php path/to/your_script.php
+      run: php email.php
       env:
         GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
