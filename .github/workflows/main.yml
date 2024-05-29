@@ -1,21 +1,13 @@
-name: gitleaks
-on:
-  pull_request:
-  push:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 4 * * *" # run once a day at 4 AM
+// .github/workflows/main.yml
 jobs:
-  scan:
-    name: gitleaks
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - uses: gitleaks/gitleaks/gitleaks-action@v2.3.4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}} # Only required for Organizations, not personal accounts.
-
-
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Deploy
+      env:
+        GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+      run: |
+        echo "Deploying using Gmail password"
+        # tutaj dodaj kod do użycia hasła
