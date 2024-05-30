@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
+require './config.php'; // Import pliku konfiguracyjnego
 
 // Ustawienia poczty
 $mail = new PHPMailer(true);
@@ -12,17 +13,16 @@ $mail = new PHPMailer(true);
 try {
     //Server settings
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = SMTP_HOST; // Pobierz dane z pliku konfiguracyjnego
     $mail->SMTPAuth = true;
-    $mail->Username = 'botodysee@gmail.com';
-    $mail->Password = 'naku quiz njqe onvl
-    ';
+    $mail->Username = SMTP_USER; // Pobierz dane z pliku konfiguracyjnego
+    $mail->Password = SMTP_PASSWORD; // Pobierz dane z pliku konfiguracyjnego
     $mail->Port = 587; // Może być inny, zależnie od konfiguracji serwera SMTP
     $mail->SMTPSecure = 'tls'; // Szyfrowanie, np. ssl lub tls
 
     // Odbiorca
     $mail->setFrom($_POST['email'], $_POST['name']);
-    $mail->addAddress('info@odysse.co.uk'); // Adres odbiorcy
+    $mail->addAddress('mateuszkantarewicz@gmail.com'); // Adres odbiorcy
 
     // Content
     $mail->isHTML(false);
